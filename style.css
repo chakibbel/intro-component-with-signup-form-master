@@ -1,9 +1,37 @@
 :root {
-    --Red: hsl(0, 100%, 74%); 
-    --Green: hsl(154, 59%, 51%);
-    --Blue: hsl(248, 32%, 49%);
-    --DarkBlue: hsl(249, 10%, 26%);
-    --GrayishBlue: hsl(246, 25%, 77%);    
+    --red: hsl(0, 100%, 74%); 
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);    
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vw;
+    box-sizing: border-box;
+    background-image: url(images/bg-intro-mobile.png);
+    background-color: var(--red);
+}
+#container {
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+}
+#input-container {
+    display: flexbox;
+    flex-direction: column;
+}
+#first-paragraph {
+    width: 80vw;
+    color: white;
+    font-weight: 700;
+    align-self: center;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    margin-top: 25%;
 }
