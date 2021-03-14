@@ -30,8 +30,69 @@ body {
     width: 80vw;
     color: white;
     font-weight: 700;
-    align-self: center;
+    text-align: center;
     margin: 0 auto;
     font-size: 1.8rem;
     margin-top: 25%;
 }
+#second-paragraph {
+    width: 85vw;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    margin-top: 5%;
+}
+#tryit-paragraph {
+    width: 85vw;
+    height: 8vh;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--blue);
+    border-radius: 5px;
+    margin-top: 12%;
+    padding-top: 5%;
+}
+#input-container {
+    width: 85vw;
+    height: 50%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+input {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 5%;
+    margin-bottom: 5%;
+    border: 0.1px solid hsl(0, 0%, 80%);
+    border-radius: 5px;
+    font-weight: 700;
+}
+button {
+    width: 90%;
+    padding: 5%;
+    color: white;
+    text-transform: uppercase;
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+#footer {
+    color: var(--grayish-blue);
+    font-size: 0.7rem;
+    text-align: center;
+    width: 80%;
+    margin: 5% auto;
+}
+#terms {
+    color: var(--red);
+    font-weight: 700;
+}
+
