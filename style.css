@@ -11,16 +11,17 @@ body {
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 100vw;
+    /*height: 100vw;*/
     box-sizing: border-box;
     background-image: url(images/bg-intro-mobile.png);
+    background-size: cover;
     background-color: var(--red);
 }
 #container {
     width: 100%;
     display: flexbox;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;  
 }
 #input-container {
     display: flexbox;
@@ -49,16 +50,16 @@ body {
     text-align: center;
     margin: 0 auto;
     background-color: var(--blue);
-    border-radius: 5px;
-    margin-top: 12%;
-    padding-top: 5%;
+    border-radius: 10px;
+    margin-top: 15%;
+    padding-top: 5px;
 }
 #input-container {
     width: 85vw;
     height: 50%;
     text-align: center;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 0 auto;
     margin-top: 5%;
     padding-top: 5%;
@@ -94,5 +95,60 @@ button {
 #terms {
     color: var(--red);
     font-weight: 700;
+}
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url(images/bg-intro-desktop.png);
+    }
+    #container {
+        display: grid;
+        grid-template-columns:10% 40% 40% 10%;
+        grid-template-rows: 10vh 10vh 25vh 25vh 20vh;
+        width: 100%;
+    }
+    #first-paragraph {
+        grid-column: 2 / 2; 
+        grid-row: 3 / 3;
+        width: auto;
+        font-size: 3rem;
+        align-self: center;
+        margin-top: 0;
+        align-self: end;
+        line-height: 1.2;
+    }
+    #second-paragraph {
+        grid-column: 2 / 2; 
+        grid-row: 4 / 4;
+        width: auto;
+        text-align: left;
+    }
+    #tryit-paragraph {
+        grid-column: 3 / 3;
+        grid-row: 2 / 2;
+        width: 40vw;
+        margin-top: 0%;
+        padding-top: 0;
+        line-height: 8vh;
+    }
+    br{content:' ';}
+    #input-container {
+        grid-column: 3 / 3;
+        grid-row: 3 / 4;
+        width: 40vw;
+        height: 60vh;
+        margin-top: 0;
+    }
+    
+}
+@media only screen and (min-width: 1450px) {
+    #first-paragraph {
+        font-size: 3.5rem;
+    }
+    #second-paragraph {
+        font-size: 1.2rem;
+    }
+    #input-container {
+        height: 70vh;
+    }
 }
 
